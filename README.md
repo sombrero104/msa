@@ -36,6 +36,9 @@ and use **_different data storage_** technologies <br/>
 - Polyglot Technology (여러 언어 사용) <br/>
 Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
 각각 서비스들이 제공해야 하는 서비스에 맞는 언어와 운영 환경을 사용할 수 있는가?  <br/>
+
+## MSA 표준 구성요소 
+<img src="./images/msa_components.png" width="50%" />
 <br/><br/>
 
 # Software Architecture
@@ -164,6 +167,25 @@ Pivotal에서 3가지 항목을 더함.
     
 <br/><br/>
 
+# RESTful Web Service
+- Consumer first
+- Make best use of HTTP
+- Use Request methods
+- Use Response Status
+- No secure info in URI 
+- Use plurals (단수보다는 복수 형태)
+    - prefer /users to /user
+    - prefer /users/1 to /user/1
+- Use nouns for resources (동사 형태보다는 명사 형태)
+- For exceptions 
+    - define a consistent approach (일괄적인 엔드포인트)
+        - /search
+        - PUT /gists/{id}/star
+        - DELETE /gists/{id}/star
+
+<br/><br/>
 
 
+
+        
 <br/><br/><br/><br/>
