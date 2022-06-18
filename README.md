@@ -20,8 +20,6 @@ and use **_different data storage_** technologies <br/>
 (각각의 서비스별로 특생에 맞게 최적화된 언어와 데이터베이스를 사용하도록 권장하고 있다.) <br/>
 > James Lewis and Martin Fowler 
 
-# Software Architecture
-
 ## Antifragile
 
 ### Auto scaling 
