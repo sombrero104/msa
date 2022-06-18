@@ -199,6 +199,51 @@ Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
         - /search
         - PUT /gists/{id}/star
         - DELETE /gists/{id}/star
-<br/><br/>
-        
+<br/>
+
+## Spring Cloud
+~~~ 
+"By 2017, at least 70% of new enterprise java applications
+won't be deployed on traditional app servers" 
+- Gartner 
+~~~ 
+<img src="./images/spring_cloud_provides.png" width="70%" />  <br/>
+스프링 클라우드를 사용하기 위해서는 스프링 부트가 필수이다. <br/>
+https://spring.io/projects/spring-cloud  <br/>
+
+### 본 프로젝트에서 Spring Cloud를 구성하기 위해서 필요한 것 
+- Centralized configuration management <br/>
+    - 환경 설정 관리를 위해서 Spring Cloud Config Server가 필요하다. <br/>
+    - 환경 설정 정보(게이트웨이 IP, 토큰 기본 정보 등)를 한 곳의 저장소에 저장해 놓고 <br/>
+    각각의 마이크로서비스에서 해당 데이터 값을 참조하는 형식. <br/>
+    - 변경된 내용이 생기더라도 마이크로서비스를 다시 빌드하고 재배포하지 않고 <br/>
+    외부 저장소의 데이터만 변경하면 모든 서비스에 다 같이 적용이 될 수 있다. (유지보수 편리) <br/>
+- Location transparency <br/>
+    - 서비스 등록, 위치 정보 확인, 검색을 위해 Naming Server(Eureka)를 사용. <br/>
+- Load Distribution (Load Balancing) <br/>
+    - Ribbon(Client Side) <br/>
+    - Spring Cloud Gateway <br/>
+- Easier REST Clients <br/>
+    - FeignClient <br/>
+- Visibility and monitoring <br/>
+    - Zipkin Distributed Tracing <br/>
+    - Netflix API gateway <br/>
+- Fault Tolerance <br/>
+    - Hystrix <br/>
+    
+<br/>
+
+## Service Discovery
+
+### Spring Cloud Netflix Eureka
+각각의 서비스를 모두 Spring Cloud Netflix Eureka에 등록한다. <br/>
+외부의 다른 서비스들이 특정 마이크로서비스를 검색하기 위해서 사용. <br/>
+어떠한 서비스가 어떠한 위치에 있는지를 등록하고 있는 것이 Service Discovery. <br/>
+서비스에 대해 등록과 검색을 제공해 주는 것을 Discovery Service라고 한다. <br/>
+~~~
+클라이언트가 요청 -> Load Balancer(또는 API Gateway) 
+-> Service Discovery: "~서버로 가세요." (필요한 서비스의 위치를 알려줌.) 
+-> Load Balancer(또는 API Gateway) 에서 해당 서버로 요청을 보낸 후 결과를 반환 받는다.
+~~~
+
 <br/><br/><br/><br/>
