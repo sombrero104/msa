@@ -45,7 +45,7 @@ Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
 Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
 안전하고 빠르고 신뢰성있게 만들어주는 인프라 구조의 네트워크 레이어(계층). <br/>
 
-<img src="./images/service_mesh.png" width="65%" />  <br/>
+<img src="./images/service_mesh.png" width="70%" />  <br/>
 - MSA 인프라 -> 미들웨어
     - 프록시 역할, 인증, 권한 부여, 암호화, 서비스 검색, 요청 라우팅, 로그 밸런싱
     - 자가 치유 복구 서비스
