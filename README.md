@@ -202,10 +202,9 @@ Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
 <br/>
 
 ## Spring Cloud
-~~~ 
-"By 2017, at least 70% of new enterprise java applications
-won't be deployed on traditional app servers" 
-- Gartner 
+> "By 2017, at least 70% of new enterprise java applications
+> won't be deployed on traditional app servers" - Gartner 
+
 ~~~ 
 <img src="./images/spring_cloud_provides.png" width="70%" />  <br/>
 스프링 클라우드를 사용하기 위해서는 스프링 부트가 필수이다. <br/>
