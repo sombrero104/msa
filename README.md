@@ -63,9 +63,9 @@ CPU, 메모리, 네트워크, 데이터베이스의 사용량이나 조건에 �
     - 카나리 배포: 조금씩 사용자의 범위를 늘려가며 피드백을 통해 배포하는 방식. (사용자 분류 테스트 및 모니터링 가능.)
     - 블루그린 배포: 새로운 버전을 배포함과 동시에 트래픽을 전환하는 방식. (빠른 롤백 가능. 자원이 두 배로 필요.)
 
-<br/><br/> 
+<br/>
 
-# Cloud Native Architecture
+## Cloud Native Architecture
 
 ### 확장 가능한 아키텍처
 - 시스템의 수평적 확장에 유연
@@ -102,9 +102,9 @@ CPU, 메모리, 네트워크, 데이터베이스의 사용량이나 조건에 �
 Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
 각각 서비스들이 제공해야 하는 서비스에 맞는 언어와 운영 환경을 사용할 수 있는가?  <br/>
 
-<br/><br/> 
+<br/>
 
-# 12 Factors 
+## 12 Factors 
 https://12factor.net <br/>
 Heroku 개발진들이 시행착오를 바탕으로 제시한 12가지 가이드라인 항목으로  <br/>
 클라우드 네이티브 애플리케이션을 개발하거나 서비스를 운영할 때 고려해야 할 항목을 정리하였다.  <br/>
@@ -163,15 +163,15 @@ Pivotal에서 3가지 항목을 더함.
 - Authentication and authorization  <br/>
     : API 사용함에 있어서 인증 부분은 필수. 
     
-<br/><br/>
+<br/>
 
-# MSA 표준 구성요소 
+## MSA 표준 구성요소 
 <img src="./images/msa_components.png" width="70%" />
 - CNCF (Cloud Native Computing Foundation)
     - Cloud Native Interactive Landscape
     - https://landscape.cncf.io 
 
-## Service Mesh
+### Service Mesh
 마이크로서비스 아키텍처를 적용한 시스템의 내부 통신을 말하는 추상적인 개념.  <br/>
 Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
 안전하고 빠르고 신뢰성있게 만들어주는 인프라 구조의 네트워크 레이어(계층). <br/>
@@ -181,9 +181,8 @@ Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
     - 프록시 역할, 인증, 권한 부여, 암호화, 서비스 검색, 요청 라우팅, 로그 밸런싱
     - 자가 치유 복구 서비스
 - 서비스간의 통신과 관련된 기능을 자동화
-<br/>
 
-## RESTful Web Service
+### RESTful Web Service
 - Consumer first
 - Make best use of HTTP
 - Use Request methods
