@@ -171,6 +171,8 @@ Pivotal에서 3가지 항목을 더함.
     - Cloud Native Interactive Landscape
     - https://landscape.cncf.io 
 
+<img src="./images/msa_landscape.png" width="70%" /><br/>
+
 ### Service Mesh
 마이크로서비스 아키텍처를 적용한 시스템의 내부 통신을 말하는 추상적인 개념.  <br/>
 Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
