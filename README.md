@@ -166,7 +166,7 @@ Pivotal에서 3가지 항목을 더함.
 <br/>
 
 ## MSA 표준 구성요소 
-<img src="./images/msa_components.png" width="70%" />
+<img src="./images/msa_components.png" width="70%" /><br/>
 - CNCF (Cloud Native Computing Foundation)
     - Cloud Native Interactive Landscape
     - https://landscape.cncf.io 
