@@ -20,38 +20,6 @@ and use **_different data storage_** technologies <br/>
 (각각의 서비스별로 특생에 맞게 최적화된 언어와 데이터베이스를 사용하도록 권장하고 있다.) <br/>
 > James Lewis and Martin Fowler 
 
-## Microservice를 도입할 때 고려해봐야 할 사항들 
-- Multiple Rates of Change (변화 비율) <br/>
-어느 정도 변화가 생길 것인가? (비용과 시간을 더 투자 대비)  <br/>
-- Independent Life Cycles (독립적인 라이프사이클)  <br/>
-애플리케이션을 구성하고 있는 각각의 서비스들이 독립적으로 개발되고 운영될 수 있도록 <br/>
-서비스 경계가 잘 만들어져있는가?  <br/>
-- Independent Scalability (독립적인 확장성) <br/>
-각각의 서비스를 운영함에 있어서 서비스 유지보수 및 확장성이 가능한가? <br/>
-확장을 쉽게 할 수 있는 상태인가? <br/>
-- Isolated Failure (격리된 오류) <br/>
-오류가 격리되어 있는가? 다른 마이크로서비스들이 받는 영향을 최소화할 수 있는가? <br/>
-- Simplify Interactions with External Dependencies (외부 종속의 단순화) <br/>
-외부 종속성과의 상호작용을 단순화할 수 있는가? 외부 종속을 줄이고 응집력을 높일 수 있는가? <br/>
-- Polyglot Technology (여러 언어 사용) <br/>
-Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
-각각 서비스들이 제공해야 하는 서비스에 맞는 언어와 운영 환경을 사용할 수 있는가?  <br/>
-
-## MSA 표준 구성요소 
-<img src="./images/msa_components.png" width="70%" />
-
-## Service Mesh
-마이크로서비스 아키텍처를 적용한 시스템의 내부 통신을 말하는 추상적인 개념.  <br/>
-Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
-안전하고 빠르고 신뢰성있게 만들어주는 인프라 구조의 네트워크 레이어(계층). <br/>
-
-<img src="./images/service_mesh.png" width="70%" />  <br/>
-- MSA 인프라 -> 미들웨어
-    - 프록시 역할, 인증, 권한 부여, 암호화, 서비스 검색, 요청 라우팅, 로그 밸런싱
-    - 자가 치유 복구 서비스
-- 서비스간의 통신과 관련된 기능을 자동화
-<br/><br/>
-
 # Software Architecture
 
 ## Antifragile
@@ -115,7 +83,26 @@ CPU, 메모리, 네트워크, 데이터베이스의 사용량이나 조건에 �
 ### 장애 경리 (Fault isolation)
 - 특정 서비스에 오류가 발생해도 다른 서비스에 주는 영향을 최소화 
 
-<br/><br/>
+<br/>
+
+## Microservice를 도입할 때 고려해봐야 할 사항들 
+- Multiple Rates of Change (변화 비율) <br/>
+어느 정도 변화가 생길 것인가? (비용과 시간을 더 투자 대비)  <br/>
+- Independent Life Cycles (독립적인 라이프사이클)  <br/>
+애플리케이션을 구성하고 있는 각각의 서비스들이 독립적으로 개발되고 운영될 수 있도록 <br/>
+서비스 경계가 잘 만들어져있는가?  <br/>
+- Independent Scalability (독립적인 확장성) <br/>
+각각의 서비스를 운영함에 있어서 서비스 유지보수 및 확장성이 가능한가? <br/>
+확장을 쉽게 할 수 있는 상태인가? <br/>
+- Isolated Failure (격리된 오류) <br/>
+오류가 격리되어 있는가? 다른 마이크로서비스들이 받는 영향을 최소화할 수 있는가? <br/>
+- Simplify Interactions with External Dependencies (외부 종속의 단순화) <br/>
+외부 종속성과의 상호작용을 단순화할 수 있는가? 외부 종속을 줄이고 응집력을 높일 수 있는가? <br/>
+- Polyglot Technology (여러 언어 사용) <br/>
+Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
+각각 서비스들이 제공해야 하는 서비스에 맞는 언어와 운영 환경을 사용할 수 있는가?  <br/>
+
+<br/><br/> 
 
 # 12 Factors 
 https://12factor.net <br/>
@@ -178,7 +165,25 @@ Pivotal에서 3가지 항목을 더함.
     
 <br/><br/>
 
-# RESTful Web Service
+# MSA 표준 구성요소 
+<img src="./images/msa_components.png" width="70%" />
+- CNCF (Cloud Native Computing Foundation)
+    - Cloud Native Interactive Landscape
+    - https://landscape.cncf.io 
+
+## Service Mesh
+마이크로서비스 아키텍처를 적용한 시스템의 내부 통신을 말하는 추상적인 개념.  <br/>
+Service Mesh를 통해서 서비스간 통신을 추상화하며,<br/>
+안전하고 빠르고 신뢰성있게 만들어주는 인프라 구조의 네트워크 레이어(계층). <br/>
+
+<img src="./images/service_mesh.png" width="70%" />  <br/>
+- MSA 인프라 -> 미들웨어
+    - 프록시 역할, 인증, 권한 부여, 암호화, 서비스 검색, 요청 라우팅, 로그 밸런싱
+    - 자가 치유 복구 서비스
+- 서비스간의 통신과 관련된 기능을 자동화
+<br/>
+
+## RESTful Web Service
 - Consumer first
 - Make best use of HTTP
 - Use Request methods
@@ -193,10 +198,6 @@ Pivotal에서 3가지 항목을 더함.
         - /search
         - PUT /gists/{id}/star
         - DELETE /gists/{id}/star
-
 <br/><br/>
-
-
-
         
 <br/><br/><br/><br/>
