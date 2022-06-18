@@ -38,7 +38,7 @@ Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
 각각 서비스들이 제공해야 하는 서비스에 맞는 언어와 운영 환경을 사용할 수 있는가?  <br/>
 
 ## MSA 표준 구성요소 
-<img src="./images/msa_components.png" width="50%" />
+<img src="./images/msa_components.png" width="70%" />
 <br/><br/>
 
 # Software Architecture
