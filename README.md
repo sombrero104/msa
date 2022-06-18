@@ -1,7 +1,43 @@
 <br/>
 
 # MSA 
-<br/> 
+
+## What is the Microservice?
+In short, the microservice architectural style is  <br/>
+an approach to developing a **_single application_** <br/>
+as a suite of **_small services_** , <br/>
+each running in its own process and  <br/>
+communicating with lightweight mechanisms, <br/>
+**_on an HTTP resource API_** ... (contd) <br/>
+
+These services are built around **_business capabilities_** <br/>
+and **_independently deployable_** <br/>
+by fully **_automated deployment_** machinery ... (contd) <br/>
+
+There is a bare minimum of **_centralized management_** of these services, <br/>
+which may be written in **_different programming languages_** <br/>
+and use **_different data storage_** technologies <br/>
+(각각의 서비스별로 특생에 맞게 최적화된 언어와 데이터베이스를 사용하도록 권장하고 있다.) <br/>
+- James Lewis and Martin Fowler <br/>
+<br/><br/>
+
+## Microservice를 도입할 때 고려해봐야 할 사항들 
+- Multiple Rates of Change (변화 비율) <br/>
+어느 정도 변화가 생길 것인가? (비용과 시간을 더 투자 대비)  <br/>
+- Independent Life Cycles (독립적인 라이프사이클)  <br/>
+애플리케이션을 구성하고 있는 각각의 서비스들이 독립적으로 개발되고 운영될 수 있도록 <br/>
+서비스 경계가 잘 만들어져있는가?  <br/>
+- Independent Scalability (독립적인 확장성) <br/>
+각각의 서비스를 운영함에 있어서 서비스 유지보수 및 확장성이 가능한가? <br/>
+확장을 쉽게 할 수 있는 상태인가? <br/>
+- Isolated Failure (격리된 오류) <br/>
+오류가 격리되어 있는가? 다른 마이크로서비스들이 받는 영향을 최소화할 수 있는가? <br/>
+- Simplify Interactions with External Dependencies (외부 종속의 단순화) <br/>
+외부 종속성과의 상호작용을 단순화할 수 있는가? 외부 종속을 줄이고 응집력을 높일 수 있는가? <br/>
+- Polyglot Technology (여러 언어 사용) <br/>
+Polyglot(여러 언어 및 기술들)을 지원하는가? <br/>
+각각 서비스들이 제공해야 하는 서비스에 맞는 언어와 운영 환경을 사용할 수 있는가?  <br/>
+<br/><br/>
 
 # Software Architecture
 
@@ -128,7 +164,6 @@ Pivotal에서 3가지 항목을 더함.
     : API 사용함에 있어서 인증 부분은 필수. 
     
 <br/><br/>
-
 
 
 
