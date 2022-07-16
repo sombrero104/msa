@@ -243,5 +243,13 @@ https://spring.io/projects/spring-cloud  <br/>
 -> Service Discovery: "~서버로 가세요." (필요한 서비스의 위치를 알려줌.) 
 -> Load Balancer(또는 API Gateway) 에서 해당 서버로 요청을 보낸 후 결과를 반환 받는다.
 ~~~
+<br/><br/>
+
+## 마이크로서비스 간 통신 방식 
+### Synchronous HTTP communication 
+
+### Asynchronous communication over AMQP
+
+
 
 <br/><br/><br/><br/>
